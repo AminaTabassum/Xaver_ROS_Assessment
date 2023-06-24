@@ -17,20 +17,20 @@ void goalLocationCallback(const std_msgs::Int8::ConstPtr& msg)
         case 1:
         // x,y coordinates for location 1
             goal_msg.pose.position.x = 1.0;   
-            goal_msg.pose.position.y = 2.0;   
+            goal_msg.pose.position.y = 1.0;   
             break;
         case 2:
          // x,y coordinates for location 2
-            goal_msg.pose.position.x = 3.0;   
-            goal_msg.pose.position.y = 4.0;   
+            goal_msg.pose.position.x = 2.0;   
+            goal_msg.pose.position.y = 2.0;   
             break;
         case 3:
          // x,y coordinates for location 3
-            goal_msg.pose.position.x = 5.0;   
-            goal_msg.pose.position.y = 6.0;   
+            goal_msg.pose.position.x = 3.0;   
+            goal_msg.pose.position.y = 3.0;   
             break;
         default:
-            ROS_WARN("Invalid goal location received: %d", goal_location_id);
+            ROS_WARN("Invalid goal location :", goal_location_id);
             return;  
     }
 
