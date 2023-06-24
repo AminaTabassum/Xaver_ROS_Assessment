@@ -1,0 +1,8 @@
+prefix=/home/amina/Desktop/xaver_ws/devel
+
+Name: xaver
+Description: Description of xaver
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
